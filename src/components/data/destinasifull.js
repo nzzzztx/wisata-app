@@ -1,0 +1,186 @@
+export const dataDetailfull = [
+  {
+    id: "kaligua",
+    title: "Agrowisata Kaligua",
+    category: "Wisata Alam",
+    location: "Paguyangan, Brebes Selatan",
+    image:
+      "https://brebesinfo.com/wp-content/uploads/2025/05/IMG-20250513-WA0224.jpg",
+    rating: 4.8,
+    time: "3-5 jam",
+    description:
+      "Perkebunan teh peninggalan kolonial Belanda yang terletak di kaki Gunung Slamet. Menawarkan udara dingin pegunungan, pemandangan hijau yang luas, serta wisata sejarah seperti Goa Jepang.",
+    price: "Rp20.000 - Rp30.000",
+    hours: "08.00 - 17.00 WIB",
+    facilities: [
+      "Parkir Luas",
+      "Toilet",
+      "Penginapan (Villa)",
+      "Restoran",
+      "Area Outbound",
+    ],
+    highlight: [
+      "Hamparan kebun teh luas",
+      "Udara sejuk pegunungan",
+      "Spot foto instagramable",
+      "Wisata sejarah Goa Jepang",
+    ],
+    maps: "https://www.google.com/maps?q=Agrowisata+Kaligua+Brebes&output=embed",
+    tips: [
+      "Datang pagi hari untuk kabut tipis yang indah",
+      "Gunakan jaket karena suhu cukup dingin",
+      "Siapkan uang tunai untuk tiket masuk",
+    ],
+  },
+  {
+    id: "ranto-canyon",
+    title: "Ranto Canyon",
+    category: "Petualangan",
+    location: "Salem, Brebes Selatan",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN9D-FJs2FjT4kMk_sY1yNXpasgk5vDBLoTg&s",
+    rating: 4.7,
+    time: "2-4 jam",
+    description:
+      "Destinasi favorit bagi pecinta adrenalin. Menawarkan pengalaman body rafting menyusuri sungai jernih di antara himpitan tebing batu eksotis setinggi puluhan meter.",
+    price: "Rp50.000 - Rp100.000 (Paket Guide)",
+    hours: "08.00 - 16.00 WIB",
+    facilities: [
+      "Pemandu Profesional",
+      "Peralatan Safety",
+      "Loker Penyimpanan",
+      "Kamar Bilas",
+    ],
+    highlight: [
+      "Body rafting menyusuri sungai",
+      "Tebing batu alami yang eksotis",
+      "Air sungai yang sangat jernih",
+      "Suasana alam yang masih asri",
+    ],
+    maps: "https://www.google.com/maps?q=Ranto+Canyon+Brebes&output=embed",
+    tips: [
+      "Bawa baju ganti dan plastik untuk baju basah",
+      "Pastikan kondisi fisik dalam keadaan fit",
+      "Gunakan sandal gunung yang tidak licin",
+    ],
+  },
+  {
+    id: "telaga-ranjeng",
+    title: "Telaga Ranjeng",
+    category: "Wisata Alam",
+    location: "Paguyangan, Brebes Selatan",
+    image:
+      "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/panturapost/2023/08/IMG_5460_jwsv3n.jpg",
+    rating: 4.5,
+    time: "1-2 jam",
+    description:
+      "Cagar alam berupa telaga yang dihuni oleh ribuan ikan lele dan emas yang dianggap keramat. Pengunjung dapat memberi makan ikan namun dilarang keras untuk memancing atau mengambilnya.",
+    price: "Rp10.000",
+    hours: "07.00 - 17.00 WIB",
+    facilities: ["Warung Makan", "Toilet", "Spot Foto", "Penjual Pakan Ikan"],
+    highlight: [
+      "Interaksi memberi makan ikan lele jinak",
+      "Kesejukan hutan lindung",
+      "Legenda lokal yang menarik",
+      "Area rekreasi keluarga yang tenang",
+    ],
+    maps: "https://www.google.com/maps?q=Telaga+Ranjeng+Brebes&output=embed",
+    tips: [
+      "Dilarang mengambil ikan karena aturan adat",
+      "Beli pakan ikan (roti) di pedagang lokal",
+      "Hati-hati saat berdiri di tepian dermaga kayu",
+    ],
+  },
+  {
+    id: "museum-galuhtimur",
+    title: "Museum Purbakala Galuhtimur",
+    category: "Edukasi & Sejarah",
+    location: "Galuhtimur, Tonjong",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThn-MWgDJKf6B7rY_pg7JHv6flCN6_ScQQg&s",
+    rating: 4.8,
+    time: "1-2 jam",
+    description:
+      "Situs prasejarah penting yang menyimpan fosil manusia purba tertua di tanah Jawa (1,8 juta tahun) serta koleksi fosil gajah purba dan hewan laut purba lainnya.",
+    price: "Gratis / Donasi Sukarela",
+    hours: "08.00 - 15.00 WIB",
+    facilities: [
+      "Ruang Galeri Fosil",
+      "Pemandu Museum",
+      "Area Parkir",
+      "Pusat Informasi",
+    ],
+    highlight: [
+      "Fosil manusia purba tertua",
+      "Koleksi fosil gajah raksasa",
+      "Edukasi sejarah geologi Jawa",
+      "Suasana pedesaan yang asri",
+    ],
+    maps: "https://www.google.com/maps?q=Museum+Galuhtimur+Brebes&output=embed",
+    tips: [
+      "Gunakan jasa pemandu untuk penjelasan detail",
+      "Dilarang menyentuh fosil tanpa izin",
+      "Bawa air minum karena lokasi cukup tersembunyi",
+    ],
+  },
+  {
+    id: "kuliner-penjalin",
+    title: "Ikan Betutu Waduk Penjalin",
+    category: "Kuliner",
+    location: "Winduaji, Paguyangan",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPH9fghPSzupfj9Gkvkh-5TkyuA2wKQf15Wg&s",
+    rating: 4.8,
+    time: "1-2 jam",
+    description:
+      "Sajian kuliner khas pinggir waduk. Ikan Betutu goreng atau bakar yang memiliki tekstur daging sangat lembut, dinikmati dengan sambal terasi dan pemandangan air waduk yang tenang.",
+    price: "Rp35.000 - Rp75.000 (per porsi)",
+    hours: "09.00 - 19.00 WIB",
+    facilities: ["Lesehan Pinggir Air", "Mushola", "Toilet", "Area Parkir"],
+    highlight: [
+      "Ikan Betutu goreng garing",
+      "View sunset di pinggir waduk",
+      "Suasana lesehan yang santai",
+      "Ikan segar hasil tangkapan lokal",
+    ],
+    maps: "https://www.google.com/maps?q=Waduk+Penjalin+Brebes&output=embed",
+    tips: [
+      "Coba menu ikan Betutu goreng garing",
+      "Waktu terbaik adalah saat sore hari (sunset)",
+      "Jangan lupa memesan teh poci gula batu",
+    ],
+  },
+  {
+    id: "samasta-coffee",
+    title: "Samasta Coffee Bumiayu",
+    category: "Cafe",
+    location: "Bumiayu, Brebes Selatan",
+    image:
+      "data:image/jpeg;base64,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",
+    rating: 4.7,
+    time: "1-3 jam",
+    description:
+      "Tempat nongkrong paling hits di Bumiayu dengan desain arsitektur industrial modern. Menawarkan berbagai menu kopi pilihan dan makanan kekinian dengan suasana yang cozy.",
+    price: "Rp15.000 - Rp45.000",
+    hours: "10.00 - 23.00 WIB",
+    facilities: [
+      "WiFi",
+      "Area Outdoor",
+      "Live Music",
+      "Charging Station",
+      "Toilet Bersih",
+    ],
+    highlight: [
+      "Desain interior industrial",
+      "Varian kopi nusantara",
+      "Spot foto kekinian",
+      "Lokasi strategis di pusat kota",
+    ],
+    maps: "https://www.google.com/maps?q=Samasta+Coffee+Bumiayu&output=embed",
+    tips: [
+      "Datang lebih awal di akhir pekan untuk dapat tempat",
+      "Area outdoor sangat nyaman saat malam hari",
+      "Coba menu signature coffee mereka",
+    ],
+  },
+];

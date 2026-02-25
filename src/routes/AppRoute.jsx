@@ -1,29 +1,37 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Tentang from "../components/pages/Tentang";
-import Unggulan from "../components/pages/Unggulan";
-import Kategori from "../components/pages/Kategori";
-
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
+
+import Home from "../components/pages/Home";
+import Destinasi from "../components/pages/navbar/Destinasi/Destinasi";
+import DestinasiDetail from "../components/pages/navbar/Destinasi/DestinasiDetail";
+import Artikel from "../components/pages/navbar/Artikel/Artikel";
+import ArtikelPage from "../components/pages/navbar/Artikel/ArtikelPage";
+import Lokasi from "../components/pages/Lokasi";
+import Kontak from "../components/pages/navbar/Kontak";
 
 const AppRoute = () => {
     return (
         <>
-            <Navbar />
-            <Hero />
-            <Tentang />
-            <Unggulan />
-            <Kategori />
+            <div className="flex flex-col min-h-screen">
+                <Navbar />
+                <ScrollToTop />
 
-            <Routes>
-                {/* <Route path="/" element={<div id="beranda"></div>} />
-                <Route path="/deskripsi" element={<div id="deskripsi">Deskripsi</div>} />
-                <Route path="/kategori" element={<div id="kategori">Kategori</div>} />
-                <Route path="/destinasi" element={<div id="destinasi">Destinasi</div>} />
-                <Route path="/kontak" element={<div id="kontak">Kontak</div>} /> */}
-            </Routes>
-            <Footer />
+                <main className="flex-1 pt-16">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/destinasi" element={<Destinasi />} />
+                        <Route path="/destinasi/:id" element={<DestinasiDetail />} />
+                        <Route path="/artikel" element={<Artikel />} />
+                        <Route path="/artikel/list-artikel" element={<ArtikelPage />} />
+                        <Route path="/lokasi" element={<Lokasi />} />
+                        <Route path="/kontak" element={<Kontak />} />
+                    </Routes>
+                </main>
+
+                <Footer />
+            </div>
         </>
     );
 };
