@@ -143,7 +143,7 @@ const DestinasiDetail = () => {
                         to="/destinasi"
                         className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition"
                     >
-                        ← Kembali ke Daftar Destinasi
+                        Kembali ke Daftar Destinasi
                     </Link>
                 </div>
 
