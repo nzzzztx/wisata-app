@@ -12,6 +12,23 @@ const Destinasi = () => {
     const [show, setShow] = useState(false);
     const [visibleCount, setVisibleCount] = useState(6);
     const searchQuery = query?.toLowerCase().trim();
+    const [search, setSearch] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("Semua");
+
+    const categories = [
+        "Semua",
+        "Wisata Alam",
+        "Kuliner",
+        "Wisata Buatan",
+        "Edukasi & Sejarah",
+        "Cafe"
+    ];
+
+    useEffect(() => {
+        if (query) {
+            setSearch(query);
+        }
+    }, [query]);
 
     useEffect(() => {
         setVisibleCount(6);
@@ -31,29 +48,30 @@ const Destinasi = () => {
         return () => observer.disconnect();
     }, []);
 
-    const filteredData = searchQuery
-        ? dataDestinasi.filter((item) =>
-            (
-                item.title +
-                item.desc +
-                item.location +
-                item.category
-            )
-                .toLowerCase()
-                .includes(searchQuery.toLowerCase())
-        )
-        : dataDestinasi;
+    const filteredData = dataDestinasi.filter((item) => {
+
+        const matchSearch =
+            item.title.toLowerCase().includes(search.toLowerCase()) ||
+            item.location.toLowerCase().includes(search.toLowerCase()) ||
+            item.desc.toLowerCase().includes(search.toLowerCase());
+
+        const matchCategory =
+            selectedCategory === "Semua" ||
+            item.category === selectedCategory;
+
+        return matchSearch && matchCategory;
+    });
 
     return (
         <section
             ref={sectionRef}
-            className="py-28 px-6 md:px-12 bg-white"
+            className="py-16 px-6 md:px-12 bg-white"
         >
             <div className="max-w-7xl mx-auto">
 
                 {/* HEADER */}
                 <div
-                    className={`text-center mb-16 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                    className={`text-center mb-8 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                         }`}
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-blue-600">
@@ -63,6 +81,35 @@ const Destinasi = () => {
                     <p className="text-slate-600 mt-4">
                         Jelajahi berbagai destinasi menarik dan populer.
                     </p>
+                </div>
+
+                {/* SEARCH */}
+                <div className="flex justify-center mb-5 mt-6">
+                    <input
+                        type="text"
+                        placeholder="Cari destinasi atau lokasi..."
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        className="w-full md:w-[500px] lg:w-[600px] px-6 py-3 rounded-full border border-gray-300 shadow-sm
+focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                </div>
+
+                {/* CATEGORY FILTER */}
+                <div className="flex flex-wrap justify-center gap-3 mb-14">
+                    {categories.map((cat) => (
+                        <button
+                            key={cat}
+                            onClick={() => setSelectedCategory(cat)}
+                            className={`px-4 py-2 rounded-full text-sm font-medium transition
+                ${selectedCategory === cat
+                                    ? "bg-blue-600 text-white"
+                                    : "bg-gray-100 hover:bg-gray-200 text-gray-700"
+                                }`}
+                        >
+                            {cat}
+                        </button>
+                    ))}
                 </div>
 
                 {/* GRID */}
